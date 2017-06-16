@@ -1,0 +1,111 @@
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+}
+
+ol,
+ul {
+  padding-left: 30px;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.smallboard-row:after {
+  clear: both;
+  content: "";
+  display: table-row-group;
+  color: #000;
+}
+
+
+.status {
+  margin-bottom: 10px;
+}
+
+.square {
+  background: inherit;
+  background-color: inherit;
+  border-width:0;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  padding: 0;
+  text-align: center;
+  width: 34px;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+}
+
+.game-info {
+  margin-left: 20px;
+}
+
+.smallboard {
+  padding: 20px;
+  display: flex;
+  flex-direction:column;
+}
+
+.smallboard.inactive{
+  background-color: #ddd;
+}
+
+.board-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.winner {
+  width:102px;
+  height: 102px;
+  font-size: 102px;
+  text-align: center;
+  color: #d31616;
+}
+
+
+
+.smallboard.tictack1,
+.smallboard.tictack4,
+.smallboard.tictack7 {
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+
+}
+
+.smallboard.tictack3,
+.smallboard.tictack4,
+.smallboard.tictack5 {
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+
+.square.tictack1,
+.square.tictack4,
+.square.tictack7 {
+  border-left: 1px solid #999;
+  border-right: 1px solid #999;
+
+}
+
+.square.tictack3, .square.tictack4, .square.tictack5 {
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
+}
